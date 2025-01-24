@@ -1,0 +1,433 @@
+.header__container {
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px 0;
+    /* position: sticky; */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    max-width: 260px;
+}
+.navegacao {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+      border-radius: 50px; /* Cria cantos arredondados */
+  padding: 10px 20px; 
+  
+      &:hover {
+        color: #f0f0f0;
+        background-color: var(--verde-musgo);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para um efeito 3D */
+
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navegacao {
+      flex-direction: column;
+    }
+  }
+
+
+  .busca {
+    display: flex;
+    align-items: center;
+    background-color: #fff; 
+    border-radius: 50px; 
+    overflow: hidden; 
+}
+
+.busca input[type="text"] {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--verde-musgo);
+    font-size: 16px;
+}
+
+.busca button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    color: var(--verde-musgo);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.busca button[type="submit"]:hover {
+    color:#fff;
+    background-color: var(--verde-musgo);
+}
+.banner {
+    img {
+        max-width: 100%;
+    }
+}
+
+.banner__descricao {
+    max-width: 1200px;
+    color: var(--verde-musgo, #222);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 110px auto;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ofertas {
+    margin-bottom: 112px;
+}
+
+.depoimentos__titulo,
+.pagamento__titulo,
+.destinos__titulo,
+.busca__titulo,
+.ofertas__titulo {
+    color: var(--laranja);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.depoimentos__titulo--sublinhado,
+.pagamento__titulo--sublinhado,
+.destinos__titulo--sublinhado,
+.busca__titulo--sublinhado,
+.ofertas__titulo--sublinhado {
+    width: 180px;
+    height: 4px;
+    background: var(--laranja);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.ofertas__cards--grupo {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ofertas__cards--item {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 32px;
+    color: var(--branco);
+    flex: 1 0 calc(50% - 48px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ofertas__cards--japao {
+    background-image: url("./img/tokyo.png");
+}
+
+.ofertas__cards--san-andreas {
+    background-image: url("./img/san-andreas.png");
+}
+
+.ofertas__cards--paraiba {
+    background-image: url("./img/paraiba.png");
+}
+
+.ofertas__cards--manaus {
+    background-image: url("./img/manaus.png");
+}
+
+.ofertas__card--destino-tipo {
+    color: var(--branco, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.ofertas__card--destino-nome {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ofertas__card--preco {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.destinos__item--botao,
+.ofertas__card--botao {
+    border-radius: 8px;
+    background: var(--laranja, #B81515);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.destinos__item--botao-texto,
+.ofertas__card--botao-texto {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--branco, #FFF);
+}
+
+.busca__categorias {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+}
+
+.busca__categoria {
+    color: var(--azul-mar, #222);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: #e4eff7;
+    padding: 24px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span.material-symbols-outlined {
+    color: var(--azul-psicina, #8C8C8C);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.destinos__lista {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+}
+
+.destinos__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destinos__item--image {
+    max-width: 100%;
+}
+
+.destinos__item--nome {
+    color: var(--verde-musgo, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 24px 0;
+}
+
+.destinos__item--descricao {
+    color: var(--verde-musgo, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.pagamento {
+    margin-bottom: 112px;
+}
+
+.pagamento__imagens--grupo,
+.pagamento__condicoes {
+    display: flex;
+    gap: 24px;
+}
+
+.pagamento__condicoes--destaque {
+    color: var(--azul-mar, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.pagamento__condicoes--detalhes {
+    color: var(--azul-mar, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 384px;
+    max-width: 100%;
+}
+
+.pagamento__imagens--imagem-container {
+    flex: 1;
+}
+
+.pagamento__imagens--imagem-destaque {
+    margin-top: 20px;
+}
+
+.pagamento__imagens--imagem {
+    max-width: 100%;
+}
+
+.depoimentos {
+    margin-bottom: 112px;
+}
+
+.depoimentos__wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.depoimentos__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.depoimentos__texto {
+    color: var(--azul-mar, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.depoimentos__autor {
+    margin-top: 12px;
+    display: flex;
+    gap: 24px;
+}
+
+.depoimentos__autor--foto {
+    max-width: 86px;
+}
+
+.depoimentos__autor--nome {
+    color: var(--azul-mar, #222);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.footer__container {
+    background: var(--preto);
+    width: 100%;
+    padding: 40px 0;
+    margin-top: -4px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--branco, #FFF);
+}
+
+.footer__logo-icon {
+    max-width: 160px;
+    margin-bottom: 16px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__text-info {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 160% */
+}
+
+.footer__social-media-container {
+    text-align: center;
+}
+
+.footer__social-media-text {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}

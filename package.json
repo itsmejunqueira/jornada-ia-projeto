@@ -1,0 +1,12 @@
+{
+  "name": "jornada-ia-base-projeto-base",
+  "version": "1.0.0",
+  "description": "jornada IA",
+  "scripts": {
+    "start": "node index.html"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.18.2"
+  }
+}
