@@ -22,48 +22,53 @@
 .header__logo {
     max-width: 260px;
 }
+
 .navegacao {
     display: flex;
     gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
+
     ul {
         list-style-type: none;
         display: flex;
         margin-bottom: 0;
         margin-top: 0;
-      }
+    }
+
     a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s ease-in-out;
-      border-radius: 50px; /* Cria cantos arredondados */
-  padding: 10px 20px; 
-  
-      &:hover {
-        color: #f0f0f0;
-        background-color: var(--verde-musgo);
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para um efeito 3D */
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+        border-radius: 50px;
+        /* Cria cantos arredondados */
+        padding: 10px 20px;
 
-      }
+        &:hover {
+            color: #f0f0f0;
+            background-color: var(--verde-musgo);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            /* Adiciona uma sombra para um efeito 3D */
+
+        }
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .navegacao {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
+}
 
 
-  .busca {
+.busca {
     display: flex;
     align-items: center;
-    background-color: #fff; 
-    border-radius: 50px; 
-    overflow: hidden; 
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 .busca input[type="text"] {
@@ -86,9 +91,10 @@
 }
 
 .busca button[type="submit"]:hover {
-    color:#fff;
+    color: #fff;
     background-color: var(--verde-musgo);
 }
+
 .banner {
     img {
         max-width: 100%;
@@ -155,7 +161,6 @@ img {
     display: inline-block;
 }
 
-.destinos__item--botao-texto,
 .card-botao-texto {
     font-size: 20px;
     font-style: normal;
@@ -164,25 +169,27 @@ img {
     color: var(--branco, #FFF);
 }
 
-  img {
+img {
     max-width: 100%;
-  }
-  
-  .cards-group {
+}
+
+.cards-group {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-around;
-    flex: 1 0 calc(50% - 48px); 
+    flex: 1 0 calc(50% - 48px);
     border-radius: 16px;
     padding: 24px 32px;
     box-sizing: border-box;
     text-align: center;
-  }
-  
-  .card-japao, .card-san-andreas, 
-  .card-paraiba,.card-manaus {
-    flex: 1 0 calc(50% - 48px); 
+}
+
+.card-japao,
+.card-san-andreas,
+.card-paraiba,
+.card-manaus {
+    flex: 1 0 calc(50% - 48px);
     border-radius: 16px;
     padding: 24px 32px;
     box-sizing: border-box;
@@ -190,69 +197,70 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: var(--branco); 
-  }
-  
-  .card-japao {
+    color: var(--branco);
+}
+
+.card-japao {
     background-image: url("./img/tokyo.png");
-  }
-  .card-san-andreas{
+}
+
+.card-san-andreas {
     background-image: url("./img/san-andreas.png");
-  } 
-  .card-paraiba{
+}
+
+.card-paraiba {
     background-image: url("./img/paraiba.png");
-  } 
-  .card-manaus {
+}
+
+.card-manaus {
     background-image: url("./img/manaus.png");
-  }
-  .destino {
+}
+
+.destino {
     text-align: center;
-  }
-  
-  .card-destino {
+}
+
+.card-destino {
     color: var(--branco);
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 8px;
-  }
-  
-  .card-destino-nome {
+}
+
+.card-destino-nome {
     font-size: 48px;
     font-weight: 700;
     line-height: normal;
-  }
-  
-  .card-preco {
+}
+
+.card-preco {
     font-size: 40px;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 24px;
-  }
-  
-  .btn {
+}
+
+.btn-custom {
     border-radius: 8px;
     background: var(--laranja);
     padding: 16px 48px;
     box-sizing: border-box;
     display: inline-block;
-  }
-  
-  .botao-texto {
     font-size: 20px;
     font-weight: 700;
     line-height: 32px;
     color: var(--branco);
-  } 
+}
 
-  .busca__categorias {
+.busca__categorias {
     display: flex;
     align-items: stretch;
     gap: 24px;
     margin-bottom: 112px;
 }
 
-.busca__categoria {
+.categoria {
     color: var(--azul-mar, #222);
     text-align: center;
     font-size: 28px;
@@ -276,25 +284,26 @@ span.material-symbols-outlined {
     line-height: normal;
 }
 
-.destinos__lista {
+.destinos-lista {
     display: flex;
     align-items: stretch;
     gap: 24px;
     margin-bottom: 112px;
+    margin-top: 20px;
 }
 
-.destinos__item {
+.destinos {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.destinos__item--image {
+.destinos_img {
     max-width: 100%;
 }
 
-.destinos__item--nome {
+.destinos_nome {
     color: var(--verde-musgo, #222);
     font-size: 28px;
     font-style: normal;
@@ -303,26 +312,34 @@ span.material-symbols-outlined {
     margin: 24px 0;
 }
 
-.destinos__item--descricao {
+.destinos_descricao {
     color: var(--verde-musgo, #222);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 24px;
-} 
+}
 
 .pagamento {
     margin-bottom: 112px;
 }
 
-.pagamento__imagens--grupo,
-.pagamento__condicoes {
+.pagamento-group {
     display: flex;
     gap: 24px;
+margin-top: 15px;
+margin-left: 10%;
+
 }
 
-.pagamento__condicoes--destaque {
+.pagamento-info {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.pagamento_destaque {
     color: var(--azul-mar, #222);
     font-size: 28px;
     font-style: normal;
@@ -331,7 +348,7 @@ span.material-symbols-outlined {
     margin-bottom: 24px;
 }
 
-.pagamento__condicoes--detalhes {
+.pagamento_detalhes {
     color: var(--azul-mar, #222);
     font-size: 20px;
     font-style: normal;
@@ -341,15 +358,8 @@ span.material-symbols-outlined {
     max-width: 100%;
 }
 
-.pagamento__imagens--imagem-container {
+.pagamento__img {
     flex: 1;
-}
-
-.pagamento__imagens--imagem-destaque {
-    margin-top: 20px;
-}
-
-.pagamento__imagens--imagem {
     max-width: 100%;
 }
 
