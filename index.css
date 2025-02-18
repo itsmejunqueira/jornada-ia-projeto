@@ -8,125 +8,123 @@
     padding: 20px 0;
     /* position: sticky; */
     transition: all 0.3s ease-in-out;
-}
 
-
-.header {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header__logo {
-    img {
-        max-width: 260px;
-    }
-}
-
-.navegacao {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    ul {
-        list-style-type: none;
+    .header {
+        justify-content: space-between;
         display: flex;
-        margin-bottom: 0;
-        margin-top: 0;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        transition: color 0.3s ease-in-out;
-        border-radius: 50px;
-        /* Cria cantos arredondados */
-        padding: 10px 20px;
-
-        &:hover {
-            color: #f0f0f0;
-            background-color: var(--verde-musgo);
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-            /* Adiciona uma sombra para um efeito 3D */
-
+    .header__logo {
+        img {
+            max-width: 260px;
         }
     }
-}
 
-@media (max-width: 768px) {
-    .navegacao {
-        flex-direction: column;
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+        }
     }
-}
+
+    .navegacao {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+            border-radius: 50px;
+            /* Cria cantos arredondados */
+            padding: 10px 20px;
+
+            &:hover {
+                color: #f0f0f0;
+                background-color: var(--verde-musgo);
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                /* Adiciona uma sombra para um efeito 3D */
+
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .navegacao {
+            flex-direction: column;
+        }
+    }
 
 
-.busca {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50px;
-    overflow: hidden;
-}
+    .busca {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50px;
+        overflow: hidden;
+    }
 
-.busca input[type="text"] {
-    flex: 1;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: var(--verde-musgo);
-    font-size: 16px;
-}
+    .busca input[type="text"] {
+        flex: 1;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--verde-musgo);
+        font-size: 16px;
+    }
 
-.busca button[type="submit"] {
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    color: var(--verde-musgo);
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
+    .busca button[type="submit"] {
+        background-color: transparent;
+        border: none;
+        padding: 10px 20px;
+        color: var(--verde-musgo);
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
 
-.busca button[type="submit"]:hover {
-    color: #fff;
-    background-color: var(--verde-musgo);
+    .busca button[type="submit"]:hover {
+        color: #fff;
+        background-color: var(--verde-musgo);
+    }
+
+
 }
 
 .banner {
     .banner__img {
         max-width: 100%;
     }
-}
 
-.banner__descricao {
-    max-width: 1200px;
-    color: var(--verde-musgo, #222);
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    margin: 110px auto;
-}
-
-@media (max-width: 768px) {
     .banner__descricao {
-        flex-direction: column;
+        max-width: 1200px;
+        color: var(--verde-musgo, #222);
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 110px auto;
     }
+
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.ofertas {
-    margin-bottom: 112px;
 }
 
 .depoimentos__titulo,
@@ -151,7 +149,93 @@
     margin-top: 16px;
 }
 
-.destinos__item--botao,
+.ofertas {
+    margin-bottom: 112px;
+
+    .cards-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-around;
+        flex: 1 0 calc(50% - 48px);
+        border-radius: 16px;
+        padding: 24px 32px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    .card-japao,
+    .card-san-andreas,
+    .card-paraiba,
+    .card-manaus {
+        flex: 1 0 calc(50% - 48px);
+        border-radius: 16px;
+        padding: 24px 32px;
+        box-sizing: border-box;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: var(--branco);
+    }
+
+    .card-japao {
+        background-image: url("./img/tokyo.png");
+    }
+
+    .card-san-andreas {
+        background-image: url("./img/san-andreas.png");
+    }
+
+    .card-paraiba {
+        background-image: url("./img/paraiba.png");
+    }
+
+    .card-manaus {
+        background-image: url("./img/manaus.png");
+    }
+
+    .destino {
+        text-align: center;
+    }
+
+    .card-destino {
+        color: var(--branco);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    .card-destino-nome {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .card-preco {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+}
+.btn-custom {
+    border-radius: 8px;
+    background: var(--laranja);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+/* .destinos__item--botao,
 .card-botao {
     border-radius: 8px;
     background: var(--laranja, #B81515);
@@ -166,110 +250,52 @@
     font-weight: 700;
     line-height: 32px;
     color: var(--branco, #FFF);
+} */
+
+.busca-container {
+    .busca__categorias {
+        display: flex;
+        align-items: stretch;
+        gap: 24px;
+        margin-bottom: 112px;
+    }
+
+    .categoria {
+        color: var(--azul-mar, #222);
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 8px;
+        background: #e4eff7;
+        padding: 24px 16px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
-.cards-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-around;
-    flex: 1 0 calc(50% - 48px);
-    border-radius: 16px;
-    padding: 24px 32px;
-    box-sizing: border-box;
-    text-align: center;
+@media (max-width: 768px) {
+   .img, 
+   .pgto-pass, 
+   .pgto-friends,
+   .pre-footer-image {
+       max-width: 100%;
+    }
 }
 
-.card-japao,
-.card-san-andreas,
-.card-paraiba,
-.card-manaus {
-    flex: 1 0 calc(50% - 48px);
-    border-radius: 16px;
-    padding: 24px 32px;
-    box-sizing: border-box;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--branco);
-}
-
-.card-japao {
-    background-image: url("./img/tokyo.png");
-}
-
-.card-san-andreas {
-    background-image: url("./img/san-andreas.png");
-}
-
-.card-paraiba {
-    background-image: url("./img/paraiba.png");
-}
-
-.card-manaus {
-    background-image: url("./img/manaus.png");
-}
-
-.destino {
-    text-align: center;
-}
-
-.card-destino {
-    color: var(--branco);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    margin-bottom: 8px;
-}
-
-.card-destino-nome {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.card-preco {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 24px;
-}
-
-.btn-custom {
-    border-radius: 8px;
-    background: var(--laranja);
-    padding: 16px 48px;
-    box-sizing: border-box;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 32px;
-    color: var(--branco);
-    text-decoration: none;
-}
-
-.busca__categorias {
-    display: flex;
-    align-items: stretch;
-    gap: 24px;
-    margin-bottom: 112px;
-}
-
-.categoria {
-    color: var(--azul-mar, #222);
-    text-align: center;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border-radius: 8px;
-    background: #e4eff7;
-    padding: 24px 16px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media (max-width: 768px) {
+    .busca-container,
+    .busca__categorias,
+    .destinos-lista,
+    .banner__descricao,
+    .pagamento-group, 
+    .depoimentos__wrapper ,
+    .footer-separe, .footer-logo{
+        flex-direction: column;
+    }
 }
 
 span.material-symbols-outlined {
@@ -280,172 +306,180 @@ span.material-symbols-outlined {
     line-height: normal;
 }
 
-.destinos-lista {
-    display: flex;
-    align-items: stretch;
-    gap: 24px;
-    margin-bottom: 112px;
-    margin-top: 20px;
-}
+
 
 .destinos {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .destinos-lista {
+        display: flex;
+        align-items: stretch;
+        gap: 24px;
+        margin-bottom: 112px;
+        margin-top: 20px;
+    }
+
+    .destinos_img {
+        max-width: 100%;
+    }
+
+    .destinos_nome {
+        color: var(--verde-musgo, #222);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 24px 0;
+    }
+
+    .destinos_descricao {
+        color: var(--verde-musgo, #222);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
 }
 
-.destinos_img {
-    max-width: 100%;
-}
-
-.destinos_nome {
-    color: var(--verde-musgo, #222);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 24px 0;
-}
-
-.destinos_descricao {
-    color: var(--verde-musgo, #222);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    margin-bottom: 24px;
-}
 
 .pagamento {
     margin-bottom: 112px;
+
+    .pagamento-group {
+        display: flex;
+        gap: 16px;
+        margin-top: 15px;
+        margin-left: 10%;
+
+    }
+
+    .pagamento-info {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagamento_destaque {
+        color: var(--azul-mar, #222);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+    .pagamento_detalhes {
+        color: var(--azul-mar, #222);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        width: 384px;
+        max-width: 100%;
+    }
+
+    .pagamento__img {
+        flex: 1;
+        max-width: 100%;
+        margin-top: 10px;
+    }
 }
 
-.pagamento-group {
-    display: flex;
-    gap: 16px;
-    margin-top: 15px;
-    margin-left: 10%;
+.depoimentos__titulo {
+    .depoimentos__wrapper {
+        display: flex;
+        gap: 24px;
+        align-items: stretch;
+        margin-top: 15px;
+    }
+
+    .depoimentos__item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .depoimentos__texto {
+        color: var(--azul-mar, #222);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .depoimento_autor {
+        margin-top: 12px;
+    }
+
+    .autor-foto {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+
+    .autor-nome {
+        color: #5191c1;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
 
 }
 
-.pagamento-info {
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.pagamento_destaque {
-    color: var(--azul-mar, #222);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 24px;
-}
-
-.pagamento_detalhes {
-    color: var(--azul-mar, #222);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    width: 384px;
-    max-width: 100%;
-}
-
-.pagamento__img {
-    flex: 1;
-    max-width: 100%;
-}
-
-.depoimentos__wrapper {
-    display: flex;
-    gap: 24px;
-    align-items: stretch;
-    margin-top: 15px;
-}
-
-.depoimentos__item {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.depoimentos__texto {
-    color: var(--azul-mar, #222);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-}
-
-.depoimento_autor {
-    margin-top: 12px;
-}
-
-.autor-foto {
-    max-width: 100px;
-    border-radius: 50%;
-}
-
-.autor-nome {
-    color: #5191c1;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 8px;
-}
 
 .footer-container {
     background: var(--preto, #000);
     width: 100%;
-    font-size: 25px;
     margin-top: -4px;
     width: fit-content;
-}
 
-.footer {
-    padding: 40px 0;
-    max-width: 1200px;
-    margin: 0px 50px;
-    color: var(--azul-mar);
-}
+    .footer {
+        padding: 40px 0;
+        max-width: 1200px;
+        margin: 0px 50px;
+    }
 
-.footer__logo-icon {
-    max-width: 160px;
-    margin-bottom: 16px;
-}
+    .footer__logo-icon {
+        max-width: 160px;
+        margin-bottom: 16px;
+    }
 
-.footer-separe {
-    display: flex;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: flex-start;
-}
+    .footer-separe {
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: flex-start;
+        color: #5191c1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
 
-.footer__info {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    color: #5191c1;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-}
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 
-.footer-social-media {
-    text-align: center;
-    color: #5191c1;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
+    .footer-social-media {
+        text-align: center;       
+    }
+
+    @media (max-width: 768px) {
+        .footer-separe, .footer-logo {
+            display: flex;
+            align-items: center;
+         }
+     }
 }
