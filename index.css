@@ -17,7 +17,7 @@
         margin: 0 auto;
     }
 
-    .header__logo {
+    .header-logo {
         img {
             max-width: 260px;
         }
@@ -74,6 +74,7 @@
         align-items: center;
         background-color: #fff;
         border-radius: 50px;
+        border: #8ca315;
         overflow: hidden;
     }
 
@@ -83,21 +84,25 @@
         border: none;
         outline: none;
         background-color: transparent;
-        color: var(--verde-musgo);
+        color: #4E5C0A;
         font-size: 16px;
+        font-weight: 600;
     }
 
     .busca button[type="submit"] {
         background-color: transparent;
         border: none;
         padding: 10px 20px;
-        color: var(--verde-musgo);
+        color: #4E5C0A;
+        border-radius: 20px;
+        font-weight: 600;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
     }
 
     .busca button[type="submit"]:hover {
         color: #fff;
+        border-radius: 20px;
         background-color: var(--verde-musgo);
     }
 
