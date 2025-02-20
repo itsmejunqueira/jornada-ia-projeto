@@ -1,6 +1,8 @@
 👓 
 📌About 
 
+Landing Page - Feita com Ia no curso da Alura.
+
 Loja virtual - Jornada viagens.
 
 <div>
