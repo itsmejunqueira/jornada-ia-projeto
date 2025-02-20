@@ -15,4 +15,7 @@ Loja virtual - Jornada viagens.
     </a>
 
 </div>
+Conheça por aqui 😁 👇🏻
+https://itsmejunqueira.github.io/jornada-ia-projeto/ 
+
 Made with love ❤️ by Leticia Junqueira 🚀.
